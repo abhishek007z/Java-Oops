@@ -345,6 +345,7 @@ class A {
 }
 
 class B extends A {
+    @Override
     B get() {   // ✔ covariant return
         return this;
     }
