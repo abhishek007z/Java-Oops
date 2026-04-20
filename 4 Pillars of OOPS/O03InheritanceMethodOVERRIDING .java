@@ -145,6 +145,7 @@ class Animal2 {
 }
 
 class Dog2 extends Animal2 {
+    @Override
     void sound() {
         System.out.println("Dog barks");
     }
@@ -159,6 +160,7 @@ class Animal3 {
 }
 
 class Dog3 extends Animal3 {
+    @Override
     void eat() {
         super.eat();
         System.out.println("Dog is eating");
@@ -210,7 +212,7 @@ public class O03InheritanceMethodOVERRIDING {
         Dog4 d4 = new Dog4();
         d4.printType();
 
-        Dog5 d5 = new Dog5();
+        new Dog5();
     }
 }
 
