@@ -149,6 +149,7 @@ class Animal2 {
 class Dog2 extends Animal2 {
 
     // Overriding
+    @Override
     void sound() {
         System.out.println("Dog barks");
     }
@@ -178,6 +179,7 @@ class Animal3 {
 
 class Dog3 extends Animal3 {
 
+    @Override
     void eat() {
         super.eat();   // 👉 calling parent method
         System.out.println("Dog is eating");
