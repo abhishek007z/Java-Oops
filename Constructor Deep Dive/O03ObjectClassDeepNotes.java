@@ -35,9 +35,22 @@ class Student {
     // ------------------------------------------
 
     @Override
-       public boolean equals(Object obj) {
-           Student s = (Student) obj;
-           return this.name.equals(s.name);
+    public boolean equals(Object obj) {
+
+        // Step 1: same object check
+        if (this == obj) return true;
+
+        // Step 2: null check
+        if (obj == null) return false;
+
+        // Step 3: class type check
+        if (getClass() != obj.getClass()) return false;
+
+        // Step 4: casting
+        Student s = (Student) obj;
+
+        // Step 5: compare data
+        return this.name.equals(s.name);
     }
     // @Override
     // public boolean equals(Object obj) {
