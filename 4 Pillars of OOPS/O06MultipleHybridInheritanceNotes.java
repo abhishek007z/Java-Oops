@@ -55,10 +55,12 @@ interface B {
 
 class C implements A, B {
 
+    @Override
     public void show() {
         System.out.println("From Interface A");
     }
 
+    @Override
     public void display() {
         System.out.println("From Interface B");
     }
@@ -94,10 +96,12 @@ interface Y {
 // Child class
 class Child extends Parent implements X, Y {
 
+    @Override
     public void methodX() {
         System.out.println("From Interface X");
     }
 
+    @Override
     public void methodY() {
         System.out.println("From Interface Y");
     }
