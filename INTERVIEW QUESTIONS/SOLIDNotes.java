@@ -102,3 +102,31 @@
 //     }
 // }
 
+
+// // ==========================================
+// // 🧠 I — INTERFACE SEGREGATION PRINCIPLE
+// // ==========================================
+
+// // 👉 Small interfaces are better
+
+// // ❌ WRONG
+
+// interface Worker {
+
+//     void work();
+//     void eat();
+// }
+
+// // 👉 Robot ko eat ki zarurat nahi ❌
+
+
+// // ✅ CORRECT
+
+// interface Workable {
+//     void work();
+// }
+
+// interface Eatable {
+//     void eat();
+// }
+
