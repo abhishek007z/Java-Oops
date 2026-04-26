@@ -130,3 +130,61 @@
 //     void eat();
 // }
 
+
+// // ==========================================
+// // 🧠 D — DEPENDENCY INVERSION PRINCIPLE
+// // ==========================================
+
+// // 👉 Depend on abstraction, not concrete class
+
+// // ❌ WRONG
+
+// class Keyboard { }
+
+// class Computer {
+
+//     Keyboard k = new Keyboard();
+// }
+
+
+// // ✅ CORRECT
+
+// interface InputDevice { }
+
+// class Keyboard2 implements InputDevice { }
+
+// class Computer2 {
+
+//     InputDevice device;
+
+//     Computer2(InputDevice device) {
+//         this.device = device;
+//     }
+// }
+
+
+
+// | Principle | Meaning                         |
+// | --------- | ------------------------------- |
+// | S         | One class → one job             |
+// | O         | Add new → don’t modify old      |
+// | L         | Child should behave like parent |
+// | I         | Small interfaces                |
+// | D         | Use abstraction                 |
+
+
+// // ❓ What is SOLID?
+// // 👉 Design principles for clean code
+
+
+// // ❓ What is SRP?
+// // 👉 One class → one responsibility
+
+
+// // ❓ What is OCP?
+// // 👉 Extend without modifying
+
+
+// // ❓ What is DIP?
+// // 👉 Depend on abstraction
+
