@@ -76,3 +76,29 @@
 //         System.out.println("20%");
 //     }
 // }
+
+
+// // ==========================================
+// // 🧠 L — LISKOV SUBSTITUTION PRINCIPLE
+// // ==========================================
+
+// // 👉 Child class should replace parent without breaking code
+
+// class Bird {
+
+//     void fly() {
+//         System.out.println("Flying");
+//     }
+// }
+
+// class Sparrow extends Bird { }
+
+// // ❌ PROBLEM
+
+// class Ostrich extends Bird {
+
+//     void fly() {
+//         throw new RuntimeException("Cannot fly");
+//     }
+// }
+
