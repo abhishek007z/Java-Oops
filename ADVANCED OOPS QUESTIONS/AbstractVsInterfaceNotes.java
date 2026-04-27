@@ -7,6 +7,7 @@
 // ABSTRACT CLASS
 // ==========================================
 
+
 abstract class Animal {
 
     abstract void sound();
@@ -59,6 +60,7 @@ public class AbstractVsInterfaceNotes {
         b.sound();
     }
 }
+
 
 
 // ✅ OUTPUT
